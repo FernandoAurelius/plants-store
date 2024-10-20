@@ -139,3 +139,32 @@ body, html {
     background-color: var(--cor-principal);
     color: var(--cor-terciaria);
 }
+
+@media (width < 1200px) {
+    
+    .principal {
+        height: 100vh;
+    }
+
+    .principal__cabecalho {
+        height: 35vh;
+    }
+
+    .principal__cabecalho__titulo {
+        font-size: xx-large;
+    }
+
+    .principal__cabecalho__subtitulo {
+        font-size: large;
+    }
+
+    .principal__conteudo {
+        font-size: large;
+        height: fit-content;
+    }
+
+    .principal__conteudo__fotos__linha {
+        flex-direction: column;
+    }
+
+}
