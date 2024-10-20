@@ -19,12 +19,17 @@ body, html {
     max-width: 100%;
     overflow-x: hidden;
     font-family: var(--fonte);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cabecalho {
     display: flex;
     background-color: var(--cor-principal);
-    padding: 2%
+    padding: 2%;
+    flex-shrink: 0;
+    height: 10%;
 }
 
 .cabecalho__menu {
@@ -49,7 +54,11 @@ body, html {
 .principal {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-self: center;
     width: 100%;
+    flex: 1;
+    height: 10%;
 }
 
 .principal__cabecalho {
@@ -79,6 +88,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: auto;
     padding: 5% 10%;
 }
@@ -118,10 +128,13 @@ body, html {
 
 .rodape {
     display: flex;
+    height: 10%;
+    flex-shrink: 0;
     flex-direction: column;
     width: auto;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 3.1% 5%;
     background-color: var(--cor-principal);
     color: var(--cor-terciaria);
