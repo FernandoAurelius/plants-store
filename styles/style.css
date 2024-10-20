@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: #2d5435;
+    --cor-secundaria: #e6d9b6;
+    --cor-terciaria: #fff;
+    --cor-quaternaria: #536493;
+    --fonte: 'Montserrat', arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--fonte);
+}
+
+.cabecalho {
+    display: flex;
+    background-color: var(--cor-principal);
+    padding: 2%
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-secundaria);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.principal__cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    padding: 5% 10%;
+    width: auto;
+    gap: 15px;
+}
+
+.principal__cabecalho__titulo {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.principal__cabecalho__subtitulo {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.principal__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 5% 10%;
+}
+
+.principal__conteudo__fotos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.principal__conteudo__fotos__linha {
+    display: flex;
+    gap: 100px;
+}
+
+.principal__conteudo__fotos__linha__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.principal__conteudo__fotos__linha__container__imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.principal__conteudo__texto {
+    color: #000;
+}
+
+.principal__conteudo__texto-destaque {
+    color: var(--cor-principal);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 3.1% 5%;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+}
